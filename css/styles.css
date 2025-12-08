@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #e5e5e5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}

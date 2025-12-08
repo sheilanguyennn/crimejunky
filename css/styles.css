@@ -43,16 +43,17 @@ main {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;              
 }
 
 .gallery img {
-  width: 100%;
-  border-radius: 8px;
+  width: 100%;         
+  height: auto;
+  display: block;      
 }
+
 
 footer {
   text-align: center;
